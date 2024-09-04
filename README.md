@@ -53,5 +53,21 @@ A responsive and modern car rental service website with a dark and light theme t
 - **JavaScript**
 - **Google Fonts (Poppins)**
 
-## Folder Structure
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. You can also open an issue if you find any bugs or have suggestions for new features.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or feedback, please contact:
+
+- **Gokul**  
+- **Email:** ksgokul2693gmail.com  
+- **LinkedIn:** www.linkedin.com/in/ksgokul
+
 
