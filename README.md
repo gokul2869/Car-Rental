@@ -24,13 +24,13 @@ A responsive and modern car rental service website with a dark and light theme t
 
 ## Demo
 
-[View Live Demo](#) (Link to your live site or GitHub Pages)
+[[View Live Demo](https://gokul2869.github.io/Car-Rental/)](#) (Link to your live site or GitHub Pages)
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/car-rental-service-website.git
+    git clone https://gokul2869.github.io/Car-Rental.
     ```
 
 2. Navigate to the project directory:
@@ -57,10 +57,6 @@ A responsive and modern car rental service website with a dark and light theme t
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes. You can also open an issue if you find any bugs or have suggestions for new features.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
