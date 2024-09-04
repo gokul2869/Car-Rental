@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Car Rental Service</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="z logo.png" alt="Car Rental Logo">
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Fleet</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Toggle Button -->
+      <button id="theme-toggle" class="theme-toggle">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Parallax Effect -->
+  <section class="hero">
+  </section>
+
+  <!-- About Us Section with Parallax Effect -->
+  <section class="about-us">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>Welcome to CarRental, your premier destination for car rentals. We provide a wide range of vehicles to suit your needs, whether you're looking for a compact car for city driving, a spacious SUV for a family trip, or a luxury vehicle for a special occasion. Our mission is to provide quality vehicles and exceptional customer service to ensure a smooth rental experience.</p>
+      <p>With years of experience in the industry, CarRental is committed to offering reliable and affordable car rental services. Our fleet is regularly maintained to ensure safety and comfort for all our customers. Choose CarRental for your next journey and experience the difference.</p>
+    </div>
+  </section>
+  <!-- Fleet Showcase Section -->
+    <section class="fleet-showcase">
+        <div class="container">
+            <h2 class="section-title">Our Fleet</h2>
+            <div class="fleet-grid">
+                <!-- Fleet Item 1 -->
+                <div class="fleet-item">
+                    <img src="car1.png" alt="Car 1">
+                    <div class="fleet-info">
+                        <h3>Luxury Sedan</h3>
+                        <p>Comfortable and stylish, perfect for city driving.</p>
+                        <button class="btn">Rent Now</button>
+                    </div>
+                </div>
+                <!-- Fleet Item 2 -->
+                <div class="fleet-item">
+                    <img src="car2.png" alt="Car 2">
+                    <div class="fleet-info">
+                        <h3>Sport Coupe</h3>
+                        <p>Experience the thrill of a high-performance car.</p>
+                        <button class="btn">Rent Now</button>
+                    </div>
+                </div>
+                <!-- Fleet Item 3 -->
+                <div class="fleet-item">
+                    <img src="car3.png" alt="Car 3">
+                    <div class="fleet-info">
+                        <h3>SUV</h3>
+                        <p>Spacious and comfortable, ideal for family trips.</p>
+                        <button class="btn">Rent Now</button>
+                    </div>
+                </div>
+                <!-- Fleet Item 4 -->
+                <div class="fleet-item">
+                  <img src="car4.png" alt="Car 3">
+                  <div class="fleet-info">
+                      <h3>MUV</h3>
+                      <p>Spacious and adaptable, perfect for family trips and group outings.</p>
+                      <button class="btn">Rent Now</button>
+                  </div>
+              </div><!-- Fleet Item 5 -->
+              <div class="fleet-item">
+                  <img src="car5.png" alt="Car 3">
+                  <div class="fleet-info">
+                      <h3>Hatchback</h3>
+                      <p>Compact, fuel-efficient, great for city driving and short trips.</p>
+                      <button class="btn">Rent Now</button>
+                  </div>
+              </div><!-- Fleet Item 6 -->
+              <div class="fleet-item">
+                  <img src="car6.png" alt="Car 3">
+                  <div class="fleet-info">
+                      <h3>Pickup Trucks</h3>
+                      <p>Rugged and versatile, ideal for heavy loads and off-road.</p>
+                      <button class="btn">Rent Now</button>
+                  </div>
+              </div>
+                <!-- Add more fleet items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+          <h2 class="section-title">Why Choose Us?</h2>
+          <div class="features-grid">
+              <!-- Feature 1 -->
+              <div class="feature-item">
+                  <div class="icon">🚗</div>
+                  <h3>Wide Range of Vehicles</h3>
+                  <p>Choose from a variety of cars to suit your needs.</p>
+              </div>
+              <!-- Feature 2 -->
+              <div class="feature-item">
+                  <div class="icon">💵</div>
+                  <h3>Affordable Prices</h3>
+                  <p>Competitive pricing to fit any budget, without compromising quality.</p>
+              </div>
+              <!-- Feature 3 -->
+              <div class="feature-item">
+                  <div class="icon">🛡️</div>
+                  <h3>Insurance Included</h3>
+                  <p>Drive with peace of mind with our comprehensive insurance coverage.</p>
+              </div>
+              <!-- Feature 4 -->
+              <div class="feature-item">
+                  <div class="icon">⭐</div>
+                  <h3>High Customer Satisfaction</h3>
+                  <p>Rated highly by our customers for quality and service.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Booking Form Section -->
+  <section class="booking-form">
+    <div class="container">
+        <h2 class="section-title">Book Your Car</h2>
+        <form action="https://example.com/booking" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="car-type">Select Car Type</label>
+                <select id="car-type" name="car-type" required>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Pickup Truck</option>
+                    <option value="muv">MUV</option>
+                    <option value="hatchback">Hatchback</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date">Pick-Up Date</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+            <div class="form-group">
+                <label for="dropoff-date">Drop-Off Date</label>
+                <input type="date" id="dropoff-date" name="dropoff-date" required>
+            </div>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </div>
+</section>
+
+
+  <!-- Additional content can go here -->
+  <script src="script.js"></script>
+</body>
+</html>
