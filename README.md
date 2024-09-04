@@ -30,7 +30,7 @@ A responsive and modern car rental service website with a dark and light theme t
 
 1. Clone the repository:
     ```bash
-    git clone https://gokul2869.github.io/Car-Rental.
+    git clone https://github.com/gokul2869/Car-Rental.git
     ```
 
 2. Navigate to the project directory:
