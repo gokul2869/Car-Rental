@@ -24,7 +24,7 @@ A responsive and modern car rental service website with a dark and light theme t
 
 ## Demo
 
-[[View Live Demo](https://gokul2869.github.io/Car-Rental/)](#) (Link to your live site or GitHub Pages)
+[[View Live Demo](https://gokul2869.github.io/Car-Rental/)]
 
 ## Installation
 
