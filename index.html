@@ -151,18 +151,18 @@
   <section class="booking-form">
     <div class="container">
         <h2 class="section-title">Book Your Car</h2>
-        <form name="submit-to-google-sheet" action="https://example.com/booking" method="post">
+        <form name="submit-to-google-sheet">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" class="input text" required>
+                <input type="text" name="name" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="input text" required>
+                <input type="email" name="email" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" class="input text" required>
+                <input type="tel" name="phone" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="car-type">Select Car Type</label>
@@ -176,11 +176,11 @@
             </div>
             <div class="form-group">
                 <label for="pickup-date">Pick-Up Date</label>
-                <input type="date" id="pickup-date" name="pickup-date" class="input text" required>
+                <input type="date" name="pickup-date" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="dropoff-date">Drop-Off Date</label>
-                <input type="date" id="dropoff-date" name="dropoff-date" class="input text" required>
+                <input type="date" name="dropoff-date" class="input text" required>
             </div>
             <button type="submit" class="submit-btn">Submit Booking</button>
         </form>
@@ -338,6 +338,23 @@
 
   <!-- Additional content can go here -->
   <script src="script.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxto94iyUMq705xFVUBi2auXqqBuClDIAjL5mUGNAc/dev'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, {})
+      .then(response => {
+        msg.innerHTML = "Your Car has been booked!!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+  </script>
 </body>
 </html>
 
