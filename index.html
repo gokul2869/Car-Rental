@@ -4,23 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image.png" sizes="16x16" type="image/png"> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Car Rental Service</title>
+  
 </head>
 <body>
   <!-- Header Section -->
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img src="z logo.png" alt="Car Rental Logo">
+        <img src="logo.png" alt="Car Rental Logo">
       </div>
       <nav class="navbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Fleet</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#about-us-section">About Us</a></li>
+          <li><a href="#fleet-showcase-section">Fleet</a></li>
+          <li><a href="#booking-forms-section">Booking Form</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
       <!-- Toggle Button -->
@@ -31,18 +34,23 @@
   </header>
 
   <!-- Hero Section with Parallax Effect -->
-  <section class="hero">
-  </section>
+   <div id="hero-section">
+        <section class="hero">
+        </section>
+    </div>
 
   <!-- About Us Section with Parallax Effect -->
   <section class="about-us">
+    <div id="about-us-section">
     <div class="about-content">
       <h2>About Us</h2>
       <p>Welcome to CarRental, your premier destination for car rentals. We provide a wide range of vehicles to suit your needs, whether you're looking for a compact car for city driving, a spacious SUV for a family trip, or a luxury vehicle for a special occasion. Our mission is to provide quality vehicles and exceptional customer service to ensure a smooth rental experience.</p>
       <p>With years of experience in the industry, CarRental is committed to offering reliable and affordable car rental services. Our fleet is regularly maintained to ensure safety and comfort for all our customers. Choose CarRental for your next journey and experience the difference.</p>
     </div>
+    </div>
   </section>
   <!-- Fleet Showcase Section -->
+   <div id="fleet-showcase-section">
     <section class="fleet-showcase">
         <div class="container">
             <h2 class="section-title">Our Fleet</h2>
@@ -102,7 +110,9 @@
                 <!-- Add more fleet items as needed -->
             </div>
         </div>
+        </div>
     </section>
+    </div>
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
@@ -137,25 +147,26 @@
       </div>
   </section>
   <!-- Booking Form Section -->
+   <div id="booking-forms-section">
   <section class="booking-form">
     <div class="container">
         <h2 class="section-title">Book Your Car</h2>
-        <form action="https://example.com/booking" method="post">
+        <form name="submit-to-google-sheet" action="https://example.com/booking" method="post">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="car-type">Select Car Type</label>
-                <select id="car-type" name="car-type" required>
+                <select id="car-type" name="car-type" class="input text" required>
                     <option value="sedan">Sedan</option>
                     <option value="suv">SUV</option>
                     <option value="truck">Pickup Truck</option>
@@ -165,16 +176,18 @@
             </div>
             <div class="form-group">
                 <label for="pickup-date">Pick-Up Date</label>
-                <input type="date" id="pickup-date" name="pickup-date" required>
+                <input type="date" id="pickup-date" name="pickup-date" class="input text" required>
             </div>
             <div class="form-group">
                 <label for="dropoff-date">Drop-Off Date</label>
-                <input type="date" id="dropoff-date" name="dropoff-date" required>
+                <input type="date" id="dropoff-date" name="dropoff-date" class="input text" required>
             </div>
-            <button type="submit" class="btn">Submit Booking</button>
+            <button type="submit" class="submit-btn">Submit Booking</button>
         </form>
+        <span id="msg"></span>
     </div>
 </section>
+</div>
 <!-- Featured Deals Section -->
 <section class="featured-deals">
     <div class="container">
@@ -182,21 +195,21 @@
         <div class="deals-grid">
             <!-- Deal 1 -->
             <div class="deal-item">
-                <img src="image.png" alt="Deal 1">
+                <img src="offer1.png" alt="Deal 1">
                 <h3>Luxury Sedan Deal</h3>
                 <p>Get 20% off on all luxury sedans for weekend rentals.</p>
                 <button class="btn">Book Now</button>
             </div>
             <!-- Deal 2 -->
             <div class="deal-item">
-                <img src="deal2.png" alt="Deal 2">
+                <img src="offer3.png" alt="Deal 2">
                 <h3>Family SUV Offer</h3>
                 <p>Rent an SUV for 5 days and get the 6th day free!</p>
                 <button class="btn">Book Now</button>
             </div>
             <!-- Deal 3 -->
             <div class="deal-item">
-                <img src="deal3.png" alt="Deal 3">
+                <img src="offer2.png" alt="Deal 3">
                 <h3>Coupe Special</h3>
                 <p>Special price on coupe cars for a limited time only.</p>
                 <button class="btn">Book Now</button>
@@ -250,8 +263,7 @@
             </div>
             <!-- Trust Item 3 -->
             <div class="trust-item">
-                <i class="fa-sharp fa-thin fa-truck-tow"></i>
-                <!-- <img src="roadside assurance.png" alt="Trust Icon 3"> -->
+                <img src="roadside assurance.png" alt="Trust Icon 3">
                 <h3>24/7 Roadside Assistance</h3>
                 <p>We offer 24/7 support and roadside assistance during your rental.</p>
             </div>
@@ -296,18 +308,19 @@
 
         <!-- Footer Section -->
         <footer class="footer">
+            <div id="contact-section">
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-logo">
-                        <img src="z logo.png" alt="Company Logo">
+                        <img src="logo.png" alt="Company Logo">
                     </div>
                     <div class="footer-links">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Fleet</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#hero-section">Home</a></li>
+                            <li><a href="#about-us-section">About Us</a></li>
+                            <li><a href="#fleet-showcase-section">Fleet</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-contact">
@@ -320,9 +333,11 @@
                     <p>&copy; 2024 Car Rental Services. All Rights Reserved.</p>
                 </div>
             </div>
+        </div>
         </footer>
 
   <!-- Additional content can go here -->
   <script src="script.js"></script>
 </body>
 </html>
+
